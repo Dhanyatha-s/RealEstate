@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow">
+    <div class="container">
+      <a class="navbar-brand" href="#">RealEstate</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#properties">Properties</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+    <section id="home" class="hero d-flex align-items-center">
+        <div class="container text-center">
+        <h1 class="display-4 text-white">Find Your Dream Home</h1>
+        <p class="lead text-white-50">Explore the finest properties in your city.</p>
+        <a href="#properties" class="btn btn-primary mt-3">Explore Properties</a>
+        </div>
+    </section>
+    <!-- Properties Section -->
+     <section id="properties" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Featured Properties</h2>
+            <div class="row">
+                <!-- property card 1 -->
+                 <div class="col-md-4">
+                    <div class="card property-card">
+                        <img src="images/pro1.jpg" class="card-img-top" alt="House image">
+                        <div class="card-body">
+                            <h5 class="card-title">Luxury Villa</h5>
+                            <p class="card-text">Located in the heart of the city of your joy</p>
+                            <a href="#" class="btn btn-outline-primary">View Details</a>
+                        </div>
+                    </div>
+                 </div>
+
+                 <!-- property card 2 -->
+                 <div class="col-md-4">
+                    <div class="card property-card">
+                        <img src="images/prop2.jpg" class="card-img-top" alt="House image">
+                        <div class="card-body">
+                            <h5 class="card-title">Modern Apartment</h5>
+                            <p class="card-text">A modern apartment with all amenities for comfortable living.</p>
+                            <a href="#" class="btn btn-outline-primary">View Details</a>
+                        </div>
+                    </div>
+                 </div>
+                 <!-- property card 3 -->
+                 <div class="col-md-4">
+                    <div class="card property-card">
+                        <img src="images/prop3.jpg" class="card-img-top" alt="House image">
+                        <div class="card-body">
+                            <h5 class="card-title">Modern Apartment</h5>
+                            <p class="card-text">A modern apartment with all amenities for comfortable living.</p>
+                            <a href="#" class="btn btn-outline-primary">View Details</a>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+
+     </section>
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Get in Touch</h2>
+      <form>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <input type="text" class="form-control" placeholder="Your Name" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <input type="email" class="form-control" placeholder="Your Email" required>
+          </div>
+        </div>
+        <textarea class="form-control mb-2" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+      </form>
+    </div>
+  </section>
+  
+       <!-- Footer -->
+  <footer class="text-center py-4">
+    <p>&copy; 2024 RealEstate. All Rights Reserved.</p>
+  </footer>
+  
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+  </script>
+  
+</body>
+</html>
